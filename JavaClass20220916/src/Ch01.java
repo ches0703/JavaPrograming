@@ -1,7 +1,8 @@
 import java.util.Scanner;
 public class Ch01 {
 	public static void main(String[] args) {
-		var name = GetData.get_name();
+		Scanner scanner = new Scanner(System.in);
+		var name = GetData.get_name(scanner);
 		var city = GetData.get_city();
 		var age = GetData.get_age();
 		var weight = GetData.get_weight();
@@ -19,12 +20,12 @@ public class Ch01 {
 		else {
 			System.out.print("미혼");
 		}
+		scanner.close();
 	}
 
 }
 class GetData{
-	public static String get_name() {
-		Scanner scanner = new Scanner(System.in);
+	public static String get_name(Scanner scanner) {
 		System.out.print("이름을 입력 하시오 : ");
 		return scanner.next();
 	}
