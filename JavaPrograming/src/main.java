@@ -1,51 +1,24 @@
 import java.util.Scanner;
 public class main {
 	public static void main(String[] args) {
-		var name = GetData.get_name();
-		var city = GetData.get_city();
-		var age = GetData.get_age();
-		var weight = GetData.get_weight();
-		var is_marry = GetData.get_is_marry();
 		
-		
-		System.out.print("이름 : "+name);
-		System.out.print(" 도시 : "+city);
-		System.out.printf(" 나이 : %d",age);
-		System.out.print(" 몸무게 : "+weight);
-		System.out.print(" 결혼여부 : ");
-		if(is_marry) {
-			System.out.print("결혼함");
-		}
-		else {
-			System.out.print("미혼");
+		final double EXCHANGE_RATE = 1392.49;
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("원화 -> 달러 (1), 달러 -> 원화 (2) : ");
+		int choice = scanner.nextInt();
+		switch(choice){
+			case 1:
+				System.out.print("원화 : ");
+				System.out.print("-> 달러 : "+(scanner.nextInt()/EXCHANGE_RATE));
+				break;
+			case 2:
+				System.out.print("달러 : ");
+				System.out.print("-> 원화 : "+(scanner.nextInt()*EXCHANGE_RATE));
+				break;
+			default:
+				System.out.print("비정상 입력");
 		}
 	}
 
 }
-class GetData{
-	public static String get_name() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("이름을 입력 하시오 : ");
-		return scanner.next();
-	}
-	public static String get_city() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("도시를 입력하시오 : ");
-		return scanner.next();
-	}
-	public static int get_age() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("나이를 입력하시오 : ");
-		return scanner.nextInt();
-	}
-	public static double get_weight() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("체중를 입력하시오 : ");
-		return scanner.nextDouble();
-	}
-	public static boolean get_is_marry() {
-		Scanner scanner = new Scanner(System.in);
-		System.out.print("결혼여부를 입력하시오 : ");
-		return scanner.nextBoolean();
-	}
-}
+
