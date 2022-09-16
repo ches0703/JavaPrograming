@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class main {
+public class Ch01 {
 	public static void main(String[] args) {
 		var name = GetData.get_name();
 		var city = GetData.get_city();
