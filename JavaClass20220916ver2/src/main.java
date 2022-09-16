@@ -18,6 +18,7 @@ public class main {
 			default:
 				System.out.print("비정상 입력");
 		}
+		scanner.close();
 	}
 
 }
