@@ -13,9 +13,9 @@ public class Ch01 {
 		System.out.print(" 도시 : "+city);
 		System.out.printf(" 나이 : %d",age);
 		System.out.print(" 몸무게 : "+weight);
-		System.out.print(" 결혼여부 : ");
+		System.out.print(" 결혼여 : ");
 		if(is_marry) {
-			System.out.print("결혼함");
+			System.out.print("기혼");
 		}
 		else {
 			System.out.print("미혼");
@@ -26,7 +26,7 @@ public class Ch01 {
 }
 class GetData{
 	public static String get_name(Scanner scanner) {
-		System.out.print("이름을 입력 하시오 : ");
+		System.out.print("이름을 입력하시오 : ");
 		return scanner.next();
 	}
 	public static String get_city() {
@@ -41,7 +41,7 @@ class GetData{
 	}
 	public static double get_weight() {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("체중를 입력하시오 : ");
+		System.out.print("몸무게를 입력하시오 : ");
 		return scanner.nextDouble();
 	}
 	public static boolean get_is_marry() {
