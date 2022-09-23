@@ -34,6 +34,7 @@ public class Training01 {
 		}while( i < 100 ); 
 		System.out.println("Do While resulte : " + sum);
 		
+		
 	}
 
 }
