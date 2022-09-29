@@ -50,7 +50,8 @@ class Rect {
 	void show() {
 		if (check()) {
 			System.out.printf("(%d,%d),(%d,%d)\n", x1, y1, x2, y2);
-		} else {
+		} 
+		else {
 			System.out.println("this is not Rect");
 		}
 	}
