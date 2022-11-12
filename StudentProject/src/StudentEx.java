@@ -9,20 +9,20 @@ public class StudentEx {
 	static ArrayList<Student> student_list = new ArrayList<Student>();
 	
 	static void printMenu() {
-		for(int i = 0; i < 110; i++) {
+		for(int i = 0; i < 50; i++) {
 			System.out.print("=");
 		}
 		System.out.println();
-		System.out.print(String.format("%-25s","Add Student = 1"));
-		System.out.print(String.format("%-25s","Remove Student = 2"));
-		System.out.print(String.format("%-25s","Search Student = 3"));
-		System.out.println(String.format("%-25s","Retouch Student = 4"));
+		System.out.print(String.format("%-20s = 1 ","Add Student"));
+		System.out.println(String.format("%-20s = 2 ","Remove Student"));
+		System.out.print(String.format("%-20s = 3 ","Search Student"));
+		System.out.println(String.format("%-20s = 4 ","Retouch Student"));
 		
-		System.out.print(String.format("%-25s","Print StudentList = 5"));
-		System.out.print(String.format("%-25s","Print Class score = 6"));
-		System.out.print(String.format("%-25s","Print Class Avg = 7"));
-		System.out.println(String.format("%-25s","Print Sorted Student List = 8"));
-		for(int i = 0; i < 110; i++) {
+		System.out.print(String.format("%-20s = 5 ","Print StudentList"));
+		System.out.println(String.format("%-20s = 6 ","Print Class score"));
+		System.out.print(String.format("%-20s = 7 ","Print Class Avg"));
+		System.out.println(String.format("%-20s = 8 ","Print Sorted List"));
+		for(int i = 0; i < 50; i++) {
 			System.out.print("=");
 		}
 		System.out.println();
